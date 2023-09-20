@@ -1,3 +1,4 @@
+
 var altura = 0              // inicio
 var largura = 0
 
@@ -11,4 +12,8 @@ function ajustaTamanhoPalcoJogo(){
 ajustaTamanhoPalcoJogo()   // fim codigo para ajuste de tamanho de tela
 
 
+var posicaoX = Math.floor(Math.random() * largura)
+var posicaoY = Math.floor(Math.random() * altura)
+
+console.log(posicaoX, posicaoY)
 
