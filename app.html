@@ -11,9 +11,28 @@
 </head>     
 <body onresize="ajustaTamanhoPalcoJogo()">  
 
+    <div class="painel">
+      <div class="vidas">
+        <img id="v1" src="imagens/imagens/coracao_cheio.png">
+        <img id="v2" src="imagens/imagens/coracao_cheio.png">
+        <img id="v3" src="imagens/imagens/coracao_cheio.png">
+
+        
+      </div>
+      <div class="cronometro">
+        Tempo restante: <span id="cronometro">
+
+        </span>
+      </div>
+    </div>
+
     
     <script>
-      posicaoRandomica()
+      document.getElementById('cronometro').innerHTML = tempo
+
+      setInterval(function() {
+        posicaoRandomica() 
+      }, 1000)                    // automatizando aparecimento do mosquito      
     </script>
 </body>
 </html>
