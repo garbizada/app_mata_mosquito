@@ -19,7 +19,7 @@ var conometro = setInterval(function() {
 
     document.getElementById('cronometro').innerHTML = tempo
 
-    if(tempo >= 20) {
+    if(tempo == 30) {
         window.location.href = 'vitoria.html'
     }
     
