@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mata mosquito</title>
   <link rel="stylesheet" href="style.css">
-  <script src="jogo.js">
-
-  </script>
+  <script src="jogo.js"></script>
 </head>     
 <body onresize="ajustaTamanhoPalcoJogo()">  
 
@@ -20,9 +18,7 @@
         
       </div>
       <div class="cronometro">
-        Tempo restante: <span id="cronometro">
-
-        </span>
+        Tempo de partida: <span id="cronometro"></span>
       </div>
     </div>
 
@@ -32,7 +28,7 @@
 
       setInterval(function() {
         posicaoRandomica() 
-      }, 1000)                    // automatizando aparecimento do mosquito      
+      }, criamosquitoTempo )                    // automatizando aparecimento do mosquito      
     </script>
 </body>
 </html>

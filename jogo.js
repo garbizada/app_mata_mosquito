@@ -3,6 +3,21 @@ var altura = 0              // inicio
 var largura = 0
 var vidas = 1
 var tempo = 0
+var criamosquitoTempo = 1500
+
+var nivel = window.location.search
+ 
+nivel = nivel.replace('?', '')
+
+if (nivel === 'normal') {
+    criamosquitoTempo = 1500
+
+}else if (nivel === 'intermediario') {
+    criamosquitoTempo = 1000
+
+}else if (nivel === 'hardcore') {
+    criamosquitoTempo = 400
+}
 
 function ajustaTamanhoPalcoJogo(){
     altura = window.innerHeight
@@ -13,7 +28,7 @@ function ajustaTamanhoPalcoJogo(){
 
 ajustaTamanhoPalcoJogo()   // fim codigo para ajuste de tamanho de tela
 
-var conometro = setInterval(function() {
+var cronometro = setInterval(function() {
 
     tempo += 1
 
